@@ -1,4 +1,4 @@
-# Pelokit
+# Travis-rubygem example
 
 [![Build Status](https://travis-ci.org/pelotontech/pelokit.svg?branch=master)](https://travis-ci.org/pelotontech/pelokit)
 
