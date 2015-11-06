@@ -20,7 +20,6 @@ module Pelokit
         list.each_with_index do |item, index|
           next if [0, 1].include? index
           next unless item < candidates[1]
-
           if item < candidates[0]
             candidates = [item, candidates[0]]
           else
