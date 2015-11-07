@@ -26,13 +26,19 @@ describe Services::ArrayHelper do
 
     it 'should raise on invalid input' do
       input = [1]
-      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
+      expect {
+        @obj.two_smallest input
+      }.to raise_error(Services::ArrayHelper::Error)
 
       input = []
-      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
+      expect {
+        @obj.two_smallest input
+      }.to raise_error(Services::ArrayHelper::Error)
 
       input = nil
-      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
+      expect {
+        @obj.two_smallest input
+      }.to raise_error(Services::ArrayHelper::Error)
     end
 
 
