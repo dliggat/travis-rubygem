@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Pelokit::Services::ArrayHelper do
+describe Services::ArrayHelper do
 
     before :each do
       @obj = described_class.new
@@ -26,13 +26,13 @@ describe Pelokit::Services::ArrayHelper do
 
     it 'should raise on invalid input' do
       input = [1]
-      expect { @obj.two_smallest input }.to raise_error(Pelokit::Services::ArrayHelper::Error)
+      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
 
       input = []
-      expect { @obj.two_smallest input }.to raise_error(Pelokit::Services::ArrayHelper::Error)
+      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
 
       input = nil
-      expect { @obj.two_smallest input }.to raise_error(Pelokit::Services::ArrayHelper::Error)
+      expect { @obj.two_smallest input }.to raise_error(Services::ArrayHelper::Error)
     end
 
 
