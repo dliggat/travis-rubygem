@@ -28,17 +28,17 @@ describe Services::ArrayHelper do
       input = [1]
       expect {
         @obj.two_smallest input
-      }.to raise_error(Services::ArrayHelper::Error)
+      }.to raise_error(Services::Error)
 
       input = []
       expect {
         @obj.two_smallest input
-      }.to raise_error(Services::ArrayHelper::Error)
+      }.to raise_error(Services::Error)
 
       input = nil
       expect {
         @obj.two_smallest input
-      }.to raise_error(Services::ArrayHelper::Error)
+      }.to raise_error(Services::Error)
     end
 
 
