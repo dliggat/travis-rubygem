@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Services::ArrayHelper do
+describe Services::Algorithms do
 
     before :each do
       @obj = described_class.new

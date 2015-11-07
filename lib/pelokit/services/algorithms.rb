@@ -9,7 +9,7 @@ module Services
   class Error < ArgumentError; end
 
 
-  class ArrayHelper
+  class Algorithms
 
     # Given an array, return the sum of the two smallest elements in that array.
     # Handle erroneous input, and do it in linear time; i.e. avoid sorting the array.
