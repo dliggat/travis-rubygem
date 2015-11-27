@@ -1,10 +1,10 @@
 module Services
 
-  refine Array do
-    def sum
-      self.inject 0, :+
-    end
-  end
+  # refine Array do
+  #   def sum
+  #     self.inject 0, :+
+  #   end
+  # end
 
   class Error < ArgumentError; end
 
@@ -36,7 +36,7 @@ module Services
       end
 
       # By this point, candidates contains the smallest sum.
-      candidates.sum
+      candidates[0] + candidates[1]
     end
 
   end
