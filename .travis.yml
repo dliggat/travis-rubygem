@@ -4,3 +4,11 @@ rvm:
   - "2.0.0"
   - "2.1.2"
 script: bundle exec rspec spec
+
+notifications:
+  slack:
+    rooms:
+      # Sending to liggat#notifications. Encrypted via: `travis encrypt "liggat:PqFzD0Sg1QlGAOHGnlD8JKFR"`.
+      secure: "ppfvxl4tOPpysmuXkIDtJRJs+EShsV7UYwMKEQevPaB6Fcd3ng3eeiWJQpQasrGyzbtzFo0ZS87dCrjyrSLcY4DE98zAWja3TMoBYnUG6K89KxdyFV9xZReMI6B4NpKCORjgOy5r3C0PqiUJgbXTzaTIizFbtYLMnR95o4i+OSxnGXM4zs2tkFWn8mNMkSdHRYen2BVWIuJ+7R2ZhELL36USMdyzjNU4W8XwzMR9YXzuw06vc12w8NckzaWsGif5aXC+b8tSJqG6vActHbQ2rWO3ExZZ4NYkQX9FhozR2Cc6qktNeAoRs21v3jqmA9NkhuQ/xcpP/1CyP4Q5mPTxCIUFlXds1lEJ6yCvnevKiM96Uad/sLCQmwF3a8red7DCkPAWz763iKS/kUv2nc5B2Rk+mmoQvlfELfo89Q0NvUqCZUV14s+lbUxi4RtMjLDn/KdgYnjKT38dr/0zKz5j7tCYggleKV/SrOlM/yEQMp3bJe2Fuk/mMXu2YnMYE7Pv8YlVY2BubroiYlMfrHxUEbNQ6YNNxcbWGcv+HWkW9vrj8oJ+6zsjC6OM59E03Px7Lp00SPC54MedYftG2OCj39FmgXtk+bsuT1zB4f5c2Y95TeVl66F/MsCaxT/KjTLpyUYoTovQRiDb4NqBHcwOLgb7Xj+LI7ybjKARYNv7HKo="
+    on_success: always
+    on_failure: always
