@@ -1,6 +1,6 @@
 # Travis-rubygem example
 
-[![Build Status](https://travis-ci.org/pelotontech/pelokit.svg?branch=master)](https://travis-ci.org/pelotontech/pelokit)
+[![Build Status](https://travis-ci.org/dliggat/travis-rubygem.svg?branch=master)](https://travis-ci.org/dliggat/travis-rubygem)
 
 A gem for interacting with the Peloton API.
 
